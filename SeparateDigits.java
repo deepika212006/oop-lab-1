@@ -2,13 +2,13 @@
 // its individual digits and print the digit separates from one another for three spaces each. for example if the user 
 // type the number 42335 the program should print ( 4 2 3 3 5). 
 
-import java.util.Scanner;
+import java.util.Scanner; //Scanner is a class in java.util package  // Scanner is used to take input from user
 
 public class SeparateDigits {
     public static void main(String[] args) {
         int count = 0;
         System.out.println("Enter a 5 digit number:");
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // System.in is an standard input stream
         int num = input.nextInt();
         int b = num; // storing the value of num in b for counting digits
         while (b != 0) {
@@ -27,6 +27,5 @@ public class SeparateDigits {
                 num = num % (int) Math.pow(10, 4 - i);
             }
         }
-        // input.close();
     }
 }

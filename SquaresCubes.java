@@ -16,14 +16,14 @@
 
 // with classes and objects
 class Square {
-    public double square(int n) {
+    public double square(int n) { // method to calculate square
         return Math.pow(n, 2);
     }
 }
 
 class Cube {
-    public double cube(int n) {
-        return Math.pow(n, 3);
+    public double cube(int n) { // method to calculate cube
+        return Math.pow(n, 3); // return type of pow is double
     }
 }
 
